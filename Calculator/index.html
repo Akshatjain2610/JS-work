@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<title>Calculator</title>
 
 	<link rel="stylesheet" href="styles.css">
@@ -12,12 +13,12 @@
 		<div class="calculator">
 			<form>
 				<div class="display">
-					<input type="text" name="display" id="display">
+					<input type="text" name="display" id="display" readonly>
 				</div>
 				<div>
-					<input type="button" value="AC" class="operator" id="AC">
-					<input type="button" value="DE" id="DE" class="operator">
-					<input type="button" value="." class="operator" id=".">
+					<input type="button" value="C" class="operator" id="c">
+					<input type="button" value="DEL" id="Backspace" class="operator">
+					<input type="button" value="%" id="%" class="operator">
 					<input type="button" value="/" class="operator" id="/">
 				</div>
 				<div>
@@ -40,12 +41,12 @@
 				</div>
 				<div>
 					<input type="button" value="0" id="0">
-					<input type="button" value="00" id="00">
-					<input type="button" value="=" class="equal operator" id="=">
+					<input type="button" value="." class="operator" id=".">
+					<input type="button" value="=" class="equal operator" id="Enter">
 				</div>
 			</form>
 
-			<!-- Here is one more way to do this -->
+			<!-- Here is one more way to do this .... Try this code without adding javascript file-->
 			<!-- <form>
 				<div class="display">
 					<input type="text" name="display" id="display">
@@ -53,7 +54,7 @@
 				<div>
 					<input type="button" value="AC" onclick="display.value=''" class="operator" id="AC">
 					<input type="button" value="DE" onclick="display.value= display.value.toString().slice(0,-1)" id="DE" class="operator">
-					<input type="button" value="." onclick="display.value+= '.'" class="operator" id=".">
+					<input type="button" value="%" onclick="display.value+= '%'" class="operator" id="%">
 					<input type="button" value="/" onclick="display.value+= '/'" class="operator" id="/">
 				</div>
 				<div>
@@ -76,7 +77,7 @@
 				</div>
 				<div>
 					<input type="button" value="0" onclick="display.value+= '0'" id="0">
-					<input type="button" value="00" onclick="display.value+= '00'" id="00">
+					<input type="button" value="." onclick="display.value+= '.'" class="operator" id=".">
 					<input type="button" value="=" class="equal operator" onclick="display.value = eval(display.value)"  id="=">
 				</div>
 			</form> -->
