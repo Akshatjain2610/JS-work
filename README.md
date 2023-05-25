@@ -1,3 +1,3 @@
 # JS-work
-1. https://akshatjain2610.github.io/JS-work/Calculator/
-2. https://akshatjain2610.github.io/JS-work/Landing%20Page%20with%20sidenav%20and%20modal/
+1. Add 'Calculator' at the end of URL for seeing Calculaor which build with HTML,CSS and JavaScript.
+2. Add 'Landing Page with sidenav and modal' at the end of URL for seeing Landing Page with Animated SideNav and Modal with SignUp functionality which is done with HTML,CSS and JavaScript.
