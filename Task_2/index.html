@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<title>Modal and Menu Slider</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<!-- Side Nav -->
+		<div id="side-nav" onclick="toggleMenu();">
+			<div class="hamburger-btn">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="nav-img">
+				<img src="profile.png" width="75px">
+			</div>
+			<ul>
+				<li>Home</li>
+				<li>Portfolio</li>
+				<li>Blog</li>
+				<li>Contact Me</li>
+			</ul>
+		</div>
+	<div class="container" id="container">
+		<div class="page-header">
+			<h1>My Landing Page</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!</p>
+			<button class="sign-up-btn" id="sign-up">Sign Up</button>
+
+		</div>
+		<div class="page-body">
+			<h3>What is Landing page?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>Tell Me More</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>Benifits</h3>
+			<ul>
+				<li>Lifitime Access</li>
+				<li>Lifitime Access</li>
+				<li>Lifitime Access</li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+
+	<!-- The Modal -->
+			<div id="singUpModal" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content" id="modal">
+			    <div class="modal-header">
+			    	<h2 class="modal-heading">Sign Up<span class="close">&times;</span></h2>
+			    </div>
+			    <div class="modal-body">
+			    	<span>Register with us to get offers, support and more.</span>
+			    	<form id="sign-up-form">
+			    		<div class="input-control">
+			    			<label class="form-lable">Name</label>
+			    			<input class="form-input" type="text" id="name" placeholder="Enter Name">
+			    			<span class="form-text"></span>
+			    		</div>
+			    		<div class="input-control">
+			    			<label class="form-lable">Email</label>
+			    			<input class="form-input" type="text" id="email" placeholder="Enter Email">
+			    			<span class="form-text"></span>
+			    		</div>
+			    		<div class="input-control">
+			    			<label class="form-lable">Password</label>
+			    			<input class="form-input" type="password" id="password" placeholder="Enter Password">
+			    			<span class="form-text"></span> 
+			    		</div>
+			    		<div class="input-control">
+			    			<label class="form-lable">Confirm Password</label>
+			    			<input class="form-input" type="password" id="confirm-password" placeholder="Confirm Password">
+			    			<span class="form-text"></span>
+			    		</div>
+			    		<input type="submit" value="Submit">
+			    	</form>
+			    </div>
+			  </div>
+
+			</div>
+
+
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
