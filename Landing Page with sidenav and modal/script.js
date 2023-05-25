@@ -2,13 +2,17 @@
 var modal = document.getElementById("singUpModal");
 var signupBtn = document.getElementById("sign-up");
 var closeBtn = document.getElementsByClassName("close")[0];
+var clicked = false;
 
 signupBtn.onclick = function() {
   modal.style.display = "block";
+  document.querySelector('.modal .modal-content').style.animation='fadeInAnimation ease 0.5s';
 }
 
 closeBtn.onclick = function() {
+  clicked = true;
   modal.style.display = "none";
+  document.querySelector('.modal .modal-content').style.animation='fadeOutAnimation ease 0.5s';
 }
 
 
@@ -19,25 +23,29 @@ function toggleMenu(){
   const container = document.getElementById('container');
   var classArray = [sideNav.classList['value']];
   if(!classArray.includes("hide")){
-  sideNav.classList.add("hide");
-  container.style.marginLeft = "0";
-  container.style.width = "100%";
-  document.getElementById('singUpModal').style.marginLeft = "0";
-  document.getElementById('singUpModal').style.width = "100%";
-  document.querySelectorAll("span")[1].style.fontSize="1rem";
-  }
+    sideNav.style.animation = 'sidenavOutAnimation 1s';
+    container.style.animation = 'containerCollapseOut 1s';
+    sideNav.classList.add("hide");
+    container.style.marginLeft = "0";
+    container.style.width = "100%";
+    document.querySelector('.modal-content').style.marginLeft='32.5%';
+    document.querySelectorAll("span")[1].style.fontSize="1rem";
+    }
   else{
+    sideNav.style.animation = 'sidenavInAnimation 1s';
+    container.style.animation = 'containerCollapseIn 1s';
     sideNav.classList.remove("hide")
     container.style.marginLeft = "15%";
     container.style.width = "85%";
-    document.getElementById('singUpModal').style.marginLeft = "15%";
-    document.getElementById('singUpModal').style.width = "85%";
     document.querySelectorAll("span")[1].style.fontSize="16px";
   }
 }
 
 
 // JS for form validation
+
+
+
 const form = document.getElementById("sign-up-form");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
@@ -54,6 +62,7 @@ form.addEventListener("submit",function(e){
       storedEmails.push(signedUpUsers[i]['email']);
     }
 
+    
     if(validateInputs() == 4){
         localStorage.setItem("signedUpUsers",JSON.stringify(signedUpUsers));
         alert("form submitted successfully");
