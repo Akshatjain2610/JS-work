@@ -37,6 +37,7 @@ function toggleMenu(){
     sideNav.classList.remove("hide")
     container.style.marginLeft = "15%";
     container.style.width = "85%";
+    document.querySelector('.modal-content').style.marginLeft='40%';
     document.querySelectorAll("span")[1].style.fontSize="16px";
   }
 }
