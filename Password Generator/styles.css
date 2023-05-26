@@ -97,7 +97,17 @@ button[type=button]:hover{
 	background: linear-gradient(to bottom, #428DF4 0%, #42557F 100%)
 }
 
-@media(max-width:600px){
+@media(max-width:425px){
+	.content{
+		width: 90%;
+	}
+	.input-control button{
+		top: 16.2%;
+		right: 11%;
+	}
+}
+
+@media(max-width:600px)and(min-width:425px){
 	.content{
 		width: 80%;
 	}
