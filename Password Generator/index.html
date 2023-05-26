@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<title>Password Generator</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<h1>Password Generator</h1>
+				<div class="input-control">
+					<input class="form-input" type="text" id="password">
+					<button value="copy" id="copy">Copy</button>
+				</div>
+				<div class="input-control">
+					<lable class="form-lable">Password Length</lable>
+					<input class="form-input" type="number" id="password-length" value="8">
+				</div>
+				<div class="input-control">
+					<lable class="form-lable">Include Uppercase Latters</lable>
+					<input class="form-input" type="checkbox" value="uppercaseLatters" id="uppercaseLatters" checked>
+				</div>
+				<div class="input-control">
+					<lable class="form-lable">Include Lowercase Latters</lable>
+					<input class="form-input" type="checkbox" value="lowercaseLatters" id="lowercaseLatters" checked>
+				</div>
+				<div class="input-control">
+					<lable class="form-lable">Include Numbers</lable>
+					<input class="form-input" type="checkbox" value="numbers" id="numbers" checked>
+				</div>
+				<div class="input-control">
+					<lable class="form-lable">Include Special Characters</lable>
+					<input class="form-input" type="checkbox" value="specialCharacters" id="specialCharacters" checked>
+				</div>
+				<button type="button" id="generated-password-btn">Generate Password</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

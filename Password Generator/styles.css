@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-top: 10%;
+}
+
+.content{
+	width: 25%;
+	background-color: rgba(255, 255, 255, 0.93);
+	margin: auto;
+	border: none;
+	border-radius: 5px;
+	padding: 30px 8px;
+	box-shadow: 1px 1px 3px white;
+}
+
+.input-control{
+	margin: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.input-control input[type=text]{
+	width: 100%;
+	margin: 10px auto 5px;
+	padding: 15px;
+	border: none;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.08);
+	outline: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.55);
+	font-weight: bold;
+}
+
+.input-control button{
+	position: absolute;
+	top: 246px;
+	right: 600px;
+	padding: 10px 8px;
+	font-size: 16px;
+	border: none;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.71);
+	color: #fff;
+	font-style: italic;
+}
+
+.input-control button:hover{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.input-control input[type=number]{
+	float: right;
+	width: 25%;
+	padding: 7px;
+	border: none;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.08);
+	outline: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.55);
+	font-weight: bold;
+}
+
+.input-control input[type=checkbox]{
+	float: right;
+	margin-top: 8px;
+	width: 15px;
+	height: 15px;
+}
+
+button[type=button]{
+	width: 90%;
+	padding: 10px;
+	margin: 5px 5%;
+	border: none;
+	border-radius: 25px;
+	background: linear-gradient(to bottom, #428d8b 0%, #4256ab 100%);
+	color: #fff;
+	font-size: 18px;
+}
+
+button[type=button]:hover{
+	background: linear-gradient(to bottom, #428DF4 0%, #42557F 100%)
+}
+
+@media(max-width:600px){
+	.content{
+		width: 80%;
+	}
+
+	.input-control button{
+		top: 143px;
+		right: 75px;
+	}
+}
+
+@media(max-width:768px)and(min-width:600px){
+	.content{
+		width: 70%;
+	}
+
+	.input-control button{
+		top: 153px;
+		right: 120px;
+	}
+}
+
+@media(max-width:992px)and(min-width:768px){
+	.content{
+		width: 50%;
+	}
+
+	.input-control button{
+		top: 168px;
+		right: 220px;
+	}
+}
+
+@media(max-width:1200px)and(min-width:992px){
+	.content{
+		width: 50%;
+	}
+
+	.input-control button{
+		top: 189px;
+		right: 267px;
+	}
+}
